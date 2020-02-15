@@ -1,4 +1,4 @@
-package edu.vortx3735.MyPlugin;
+package edu.swatbots5015.ShuffleboardPlugin;
 
 import java.util.List;
 
@@ -9,14 +9,12 @@ import edu.wpi.first.shuffleboard.api.plugin.Plugin;
 import edu.wpi.first.shuffleboard.api.widget.ComponentType;
 import edu.wpi.first.shuffleboard.api.widget.WidgetType;
 
-@Description(group = "VorTX 3735", name = "MyPlugin", summary = "A test plugin", version = "1.0.0")
+@Description(group = "SwatBots 5015", name = "SwatPlugin", summary = "A group of widgets for Shuffleboard", version = "1.0.0")
 public class App extends Plugin {
 	@Override
 	@SuppressWarnings("all")
 	public List<ComponentType> getComponents() {
 
-		return ImmutableList.of(WidgetType.forAnnotatedWidget(MyWidget.class),
-				WidgetType.forAnnotatedWidget(MyDataBoundWidget.class),
-				WidgetType.forAnnotatedWidget(MyMapBoundWidget.class));
+		return ImmutableList.of(WidgetType.forAnnotatedWidget(TemperatureGauge.class));
 	}
 }

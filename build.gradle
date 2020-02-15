@@ -12,7 +12,7 @@ plugins {
     id 'java-library'
 }
 
-ext.FRC_YEAR = "2019"
+ext.FRC_YEAR = "2020"
 
 
 repositories {
@@ -31,10 +31,10 @@ def getFrcToolsRoot ()
         String pubFolder = System.getenv("PUBLIC")
         if (pubFolder == null)
         {
-            pubFolder = "C:\\Users\\Public"
+            pubFolder = "C:\\Users\\Public\\wpilib\\"
         }
 
-        return pubFolder + "/frc${FRC_YEAR}" 
+        return pubFolder + "/wpilib/${FRC_YEAR}" 
 
     }
     else
@@ -48,9 +48,14 @@ def getDeployDest ()
     return System.getProperty ("user.home") + "/Shuffleboard/plugins"
 }
 
+def getDeployDestRobot ()
+{
+    return "../5015-robot-code-2020/libs"
+}
+
 def getShuffleboardJar ()
 {
-    return files(getFrcToolsRoot() + "/tools/shuffleboard.jar")
+    return files(getFrcToolsRoot() + "/tools/Shuffleboard.jar")
 }
 
 
