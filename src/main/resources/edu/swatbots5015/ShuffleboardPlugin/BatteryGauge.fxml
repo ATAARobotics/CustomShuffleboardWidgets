@@ -13,7 +13,7 @@
 		
 		<Label fx:id="title" prefWidth="64738" text="Battery Gauge" alignment="CENTER" />
 		
-		<Gauge fx:id="_theGauge" skinType="TILE_KPI" />
+		<Gauge fx:id="_theGauge" skinType="TILE_TEXT_KPI" />
 	</VBox>
 </AnchorPane>
 

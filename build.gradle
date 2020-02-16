@@ -63,6 +63,10 @@ task deployWidget (type: Copy, group: "Shuffleboard Widget", description: "Copy 
     from "build/libs"
     into getDeployDest ()
     include "*.jar"
+
+    from "build/libs"
+    into getDeployDestRobot ()
+    include "*.jar"
 }
 
 
