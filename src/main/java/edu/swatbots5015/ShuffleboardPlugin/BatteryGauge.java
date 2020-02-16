@@ -15,7 +15,6 @@ import edu.wpi.first.shuffleboard.api.prefs.Group;
 import edu.wpi.first.shuffleboard.api.prefs.Setting;
 import java.util.LinkedList;
 
-
 @Description(dataTypes = { NumberType.class}, name = "Battery Gauge")
 @ParametrizedController(value = "BatteryGauge.fxml")
 public class BatteryGauge extends SimpleAnnotatedWidget<Number> {
