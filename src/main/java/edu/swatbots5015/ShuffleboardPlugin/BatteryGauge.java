@@ -4,15 +4,18 @@ import edu.wpi.first.shuffleboard.api.data.types.NumberType;
 import edu.wpi.first.shuffleboard.api.widget.Description;
 import edu.wpi.first.shuffleboard.api.widget.ParametrizedController;
 import edu.wpi.first.shuffleboard.api.widget.SimpleAnnotatedWidget;
+import edu.wpi.first.shuffleboard.api.prefs.Group;
+import edu.wpi.first.shuffleboard.api.prefs.Setting;
+
 import eu.hansolo.medusa.Gauge;
 import eu.hansolo.medusa.TickLabelLocation;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
-import edu.wpi.first.shuffleboard.api.prefs.Group;
-import edu.wpi.first.shuffleboard.api.prefs.Setting;
+
 import java.util.LinkedList;
 
 @Description(dataTypes = { NumberType.class}, name = "Battery Gauge")
