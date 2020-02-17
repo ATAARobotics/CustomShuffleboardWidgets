@@ -15,7 +15,9 @@ public class App extends Plugin {
 	@SuppressWarnings("all")
 	public List<ComponentType> getComponents() {
 
-		return ImmutableList.of(WidgetType.forAnnotatedWidget(TemperatureGauge.class),
-			WidgetType.forAnnotatedWidget(BatteryGauge.class));
+		return ImmutableList.of(
+			WidgetType.forAnnotatedWidget(TemperatureGauge.class),
+			WidgetType.forAnnotatedWidget(BatteryGauge.class)
+		);
 	}
 }
