@@ -5,7 +5,7 @@ import edu.wpi.first.shuffleboard.api.widget.Description;
 import edu.wpi.first.shuffleboard.api.widget.ParametrizedController;
 import edu.wpi.first.shuffleboard.api.widget.SimpleAnnotatedWidget;
 import eu.hansolo.medusa.Gauge;
-import eu.hansolo.medusa.TickLabelLocation;
+//import eu.hansolo.medusa.TickLabelLocation;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;

@@ -8,7 +8,7 @@ import edu.wpi.first.shuffleboard.api.prefs.Group;
 import edu.wpi.first.shuffleboard.api.prefs.Setting;
 
 import eu.hansolo.medusa.Gauge;
-import eu.hansolo.medusa.TickLabelLocation;
+//import eu.hansolo.medusa.TickLabelLocation;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
