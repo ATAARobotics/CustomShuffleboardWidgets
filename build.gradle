@@ -12,7 +12,7 @@ plugins {
     id 'java-library'
 }
 
-ext.FRC_YEAR = "2020"
+ext.FRC_YEAR = "2022"
 
 
 repositories {
@@ -50,7 +50,7 @@ def getDeployDest ()
 
 def getDeployDestRobot ()
 {
-    return "../5015-robot-code-2020/libs"
+    return "../4421-robot-code-2022/libs"
 }
 
 def getShuffleboardJar ()
