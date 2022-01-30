@@ -1,4 +1,4 @@
-package edu.swatbots5015.ShuffleboardPlugin;
+package edu.tbd4421.ShuffleboardPlugin;
 
 import edu.wpi.first.shuffleboard.api.data.types.NumberType;
 import edu.wpi.first.shuffleboard.api.widget.Description;

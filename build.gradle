@@ -31,7 +31,7 @@ def getFrcToolsRoot ()
         String pubFolder = System.getenv("PUBLIC")
         if (pubFolder == null)
         {
-            pubFolder = "C:\\Users\\Public\\wpilib\\"
+            pubFolder = "C:\\Users\\Public\\"
         }
 
         return pubFolder + "/wpilib/${FRC_YEAR}" 
@@ -58,22 +58,26 @@ def getShuffleboardJar ()
     return files(getFrcToolsRoot() + "/tools/Shuffleboard.jar")
 }
 
-
-task deployWidget (type: Copy, group: "Shuffleboard Widget", description: "Copy the widget jar into the Shuffleboard plugin folder", dependsOn: "build") {
+task copyToShuffleboard (type: Copy, group: "4421", description: "Copy the widget jar into the Shuffleboard plugin folder") {
     from "build/libs"
     into getDeployDest ()
     include "*.jar"
+}
+task copyToProject (type: Copy, group: "4421", description: "Copy the widget jar into the project folder") {
 
     from "build/libs"
     into getDeployDestRobot ()
     include "*.jar"
 }
 
+task deployWidget (group: "4421", description: "Copy the widget jar into the Shuffleboard plugin folder", dependsOn: "build", dependsOn: "copyToProject", dependsOn: "copyToShuffleboard") {
+
+}
 
 jar {
-
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
     from {
-        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+        configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) }
     }
 }
 
@@ -88,7 +92,7 @@ dependencies {
 
     // Han Solo Gauge library dependency
     // YOU MAY REMOVE THIS IF YOU ARE NOT USING THE Han Solo GAUGE LIBRARY
-    compile 'eu.hansolo:Medusa:8.3'
+    implementation 'eu.hansolo:Medusa:8.3'
 
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation 'com.google.guava:guava:27.0.1-jre'
