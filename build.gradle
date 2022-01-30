@@ -70,7 +70,7 @@ task copyToProject (type: Copy, group: "4421", description: "Copy the widget jar
     include "*.jar"
 }
 
-task deployWidget (group: "4421", description: "Copy the widget jar into the Shuffleboard plugin folder", dependsOn: "build", dependsOn: "copyToProject", dependsOn: "copyToShuffleboard") {
+task deployWidget (group: "4421", description: "Copy the widget jar into the Shuffleboard plugin folder", dependsOn: ["build", copyToProject, copyToShuffleboard]) {
 
 }
 
