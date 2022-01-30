@@ -3,7 +3,7 @@
 This repository contains custom FRC 2020 Shuffleboard widgets. Currently only a temperature gauge was been developed.
 
 # HOW-TO: Use these Widgets
-When designing a widget, make sure you set dependencies in `gradle.build` to to better fit the needs of your widget. Currently, the Han Solo gauge library is being used to display info using a gauge.
+When designing a widget, make sure you set dependencies in `build.gradle` to to better fit the needs of your widget. Currently, the Han Solo gauge library is being used to display info using a gauge.
 
 # HOW-TO: Build, Debug, and Deploy Your Widget(s)
 
