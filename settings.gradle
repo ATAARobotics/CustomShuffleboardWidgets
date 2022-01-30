@@ -7,7 +7,7 @@
  * in the user manual at https://docs.gradle.org/5.2.1/userguide/multi_project_builds.html
  */
 
-rootProject.name = 'SwatBots5015.Shuffleboard.2020'
+rootProject.name = '4421.Shuffleboard.2022'
 
 
 
