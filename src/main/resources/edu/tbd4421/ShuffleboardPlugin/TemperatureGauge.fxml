@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.VBox?>
 
 <AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="_thePane"
-	fx:controller="edu.swatbots5015.ShuffleboardPlugin.TemperatureGauge" minWidth="400"
+	fx:controller="edu.tbd4421.ShuffleboardPlugin.TemperatureGauge" minWidth="400"
 	minHeight="256">
 	<VBox  AnchorPane.topAnchor="15" AnchorPane.rightAnchor="0"
 		AnchorPane.leftAnchor="0" AnchorPane.bottomAnchor="0">
